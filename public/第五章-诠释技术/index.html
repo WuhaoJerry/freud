@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wuhaojerry-github-io.pages.dev","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="第五章 诠释技术">
+<meta property="og:url" content="https://wuhaojerry-github-io.pages.dev/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AF%A0%E9%87%8A%E6%8A%80%E6%9C%AF/index.html">
+<meta property="og:site_name" content="hao&#39;s notes">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-05-07T00:42:16.000Z">
+<meta property="article:modified_time" content="2024-07-16T14:08:25.566Z">
+<meta property="article:author" content="hao">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wuhaojerry-github-io.pages.dev/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AF%A0%E9%87%8A%E6%8A%80%E6%9C%AF/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wuhaojerry-github-io.pages.dev/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AF%A0%E9%87%8A%E6%8A%80%E6%9C%AF/","path":"第五章-诠释技术/","title":"第五章 诠释技术"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>第五章 诠释技术 | hao's notes</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">hao's notes</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">知识库和博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="站内搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>知识库目录</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>博客标签</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>站内搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E6%80%A7%EF%BC%88%E2%80%9C%E8%AF%A0%E9%87%8A%E6%80%A7%E2%80%9D%EF%BC%89%E5%B9%B2%E9%A2%84"><span class="nav-text">分析性（“诠释性”）干预</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E5%AF%BC%E4%BB%A5%E5%8F%8A%E5%BB%BA%E7%AB%8B%E6%B2%BB%E7%96%97%E8%81%94%E7%9B%9F"><span class="nav-text">指导以及建立治疗联盟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A2%E7%B4%A2"><span class="nav-text">探索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%A2%E8%B4%A8"><span class="nav-text">面质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BE%84%E6%B8%85"><span class="nav-text">澄清</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A8%E5%8A%9B%E6%80%A7%E8%AF%A0%E9%87%8A"><span class="nav-text">动力性诠释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%BB%E6%83%85%E8%AF%A0%E9%87%8A"><span class="nav-text">移情诠释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%B7%E6%BA%90%E6%80%A7%E8%AF%A0%E9%87%8A"><span class="nav-text">起源性诠释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%A6%E7%9A%84%E8%AF%A0%E9%87%8A"><span class="nav-text">梦的诠释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%98%BB%E6%8A%97%E8%AF%A0%E9%87%8A"><span class="nav-text">阻抗诠释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5%E6%80%A7%E8%AF%A0%E9%87%8A"><span class="nav-text">链接性诠释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E5%BB%BA"><span class="nav-text">重建</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%91%E7%8E%B0%E9%98%B2%E5%BE%A1"><span class="nav-text">发现防御</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BC%94%E7%BB%8E%E6%80%A7%E6%8A%80%E6%9C%AF"><span class="nav-text">演绎性技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BD%92%E7%BA%B3%E6%80%A7%E6%8A%80%E6%9C%AF"><span class="nav-text">归纳性技术</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%A0%E9%87%8A%E7%9A%84%E9%A1%BA%E5%BA%8F"><span class="nav-text">诠释的顺序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A8%81%E8%83%81%E5%88%B0%E7%94%9F%E5%91%BD%E5%AE%89%E5%85%A8%E7%9A%84%E9%98%B2%E5%BE%A1"><span class="nav-text">威胁到生命安全的防御</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B2%E6%89%B0%E6%94%B6%E9%9B%86%E9%87%8D%E8%A6%81%E4%BF%A1%E6%81%AF%E7%9A%84%E9%98%B2%E5%BE%A1"><span class="nav-text">干扰收集重要信息的防御</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%BC%E8%87%B4%E9%98%BB%E6%8A%97%E6%B2%BB%E7%96%97%E7%9A%84%E9%98%B2%E5%BE%A1"><span class="nav-text">导致阻抗治疗的防御</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%83%E6%88%90%E6%9D%A5%E8%AE%BF%E8%80%85%E6%95%B4%E4%BD%93%E7%97%85%E7%90%86%E6%83%85%E5%86%B5%E7%9A%84%E9%98%B2%E5%BE%A1"><span class="nav-text">促成来访者整体病理情况的防御</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A5%9E%E7%BB%8F%E7%97%87%E4%B8%AD%E7%9A%84%E9%98%B2%E5%BE%A1"><span class="nav-text">神经症中的防御</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%B9%E7%BC%98%E6%80%A7%E4%BA%BA%E6%A0%BC%E7%BB%84%E7%BB%87%E4%B8%AD%E7%9A%84%E9%98%B2%E5%BE%A1"><span class="nav-text">边缘性人格组织中的防御</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%92%A8%E8%AF%A2%E5%92%8C%E7%9F%AD%E7%A8%8B%E6%B2%BB%E7%96%97%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E9%98%B2%E5%BE%A1"><span class="nav-text">咨询和短程治疗中出现的防御</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="hao"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">hao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">53</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wuhaojerry-github-io.pages.dev/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AF%A0%E9%87%8A%E6%8A%80%E6%9C%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hao">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hao's notes">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="第五章 诠释技术 | hao's notes">
+      <meta itemprop="description" content=" ">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          第五章 诠释技术
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-05-07 08:42:16" itemprop="dateCreated datePublished" datetime="2024-05-07T08:42:16+08:00">2024-05-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-07-16 22:08:25" itemprop="dateModified" datetime="2024-07-16T22:08:25+08:00">2024-07-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">阅读笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/" itemprop="url" rel="index"><span itemprop="name">基础知识类书籍</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/%E5%BF%83%E7%81%B5%E7%9A%84%E9%9D%A2%E5%85%B7-101%E7%A7%8D%E9%98%B2%E5%BE%A1/" itemprop="url" rel="index"><span itemprop="name">心灵的面具 101种防御</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description"> </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>精神分析性治疗（Compton,1975;Gray,1994;Blackman,1994;Dorpat,2000）要求你首先能解码人们究竟是如何不让自己体验各种情感的。其次，你需要让病人注意到他们适应不良的防御。换言之，动力性心理治疗和精神分析中，<strong>治疗师说了什么</strong>以及<strong>什么时候说</strong>都属于治疗技术的一部分。分析师经常称他们在治疗中对来访者说的各类不同的话为“干预”。</p>
+<h2 id="分析性（“诠释性”）干预">分析性（“诠释性”）干预</h2>
+<h3 id="指导以及建立治疗联盟">指导以及建立治疗联盟</h3>
+<p>指导可以在第二个咨询小节，或者你完成初始评估并决定给病人进行治疗后给出。一些刚刚开始心理治疗的人可能不知道在治疗中要做什么。对这样的来访者——尤其是他们接受的是一周一次的心理治疗的话——最好是能描述一下咨询过程以帮助他们开始。常用的指导包括告诉他们尽可能地去谈论谈论他们和主诉相关的想法和感受。他们可以讲对生活中从过去到现在任何重要关系的想法和感受。他们也可以讲述能记起的夜间梦和白日梦。很重要的一点是，他们能够讨论对治疗师讲的话以及对治疗的任何积极或消极的反应。其他对治疗有帮助的材料包括对治疗师的幻想以及坐在你办公室里他们可能出现的任何随机想法。</p>
+<p>有些人能自主地开始治疗，立即开始联想并与你关联。通常这样的来访者不需要任何指导。在见面次数频繁的治疗中，例如，（像精神分析中）一周见面三到五次，那么指导可以给的相对少些，因为这样的治疗中阻抗很快就会成为一个议题，而作为目标的自由联想则允许分析师去考察被分析者思维过程以及思维内容的连贯性。</p>
+<p>在你和你治疗的人之间建立起联盟的理念囊括了两组概念。关于“框架”的指导以及围绕着如下治疗关系方面的指导通常在第二节需要给出：</p>
+<p><strong>工作联盟</strong>（Greenson,1965）。接受治疗的人必须</p>
+<ul>
+<li>来进行你为他们安排好的治疗小节；</li>
+<li>以你要求的方式支付商量好的费用；</li>
+<li>讲话；</li>
+<li>承认他们是因为某些问题提前来见你，而你的角色是告诉他们一些事以期能帮助他们更好地理解自己。</li>
+</ul>
+<p><strong>治疗联盟</strong>（Stone,1961;Zetzel.1956）。接受治疗的人必须</p>
+<ul>
+<li>通过和你的互动发展出彼此的共情；</li>
+<li>对最初针对阻抗的防御诠释反应良好。</li>
+</ul>
+<p>如果上述任意一项被突破，那么就需要在真正去理解来访者病理方面的动力<strong>之前</strong>，先理解这种突破及其背后的防御性意义。</p>
+<h3 id="探索">探索</h3>
+<p>你询问一些问题，借此发现可以去诠释的防御。</p>
+<p>坎瑟（Kanzer,1953）建议治疗师是不是地询问些以“重建来访者的当前生活”的问题，尤其是当他们处于退行状态时。但另一方面，多帕特（Dorpat,2000）指出，过多的探索有可能会把治疗师变成某种“大检察官”，这样就在潜意识中建立起施受虐的动力——接受治疗的人感到他们必须回答问题以顺从治疗师而别无选择。格雷（Gray,1994）提出，过多的探索会导致绕开了来访者<strong>含糊其辞、压制、被动</strong>和<strong>缄默</strong>等防御，而这些防御可能在最初的治疗小节中需要被面质、被理解以促进后面的治疗。</p>
+<p>探索是一种有用的技术，但要注意避免被来访者激惹得去问太多的问题，而且也务必监测来访者的各种反应——不仅是对你所提问题的反映，而且也包括对被提问这件事本身的反应。“表达——情绪性”或“探索性”心理治疗的传统观念点其实是有问题的。</p>
+<h3 id="面质">面质</h3>
+<p>你注意到你的来访者在使用某种前意识防御，于是让他/她意识到这点。例如，你可能会对一个略过许多细节的来访者说：“似乎今天在谈论你的想法和感受时，你会体验到一些阻塞。”从定义上讲，当你去面质来访者时，你不会试图去解释他们<strong>为什么</strong>要使用这些防御。</p>
+<h3 id="澄清">澄清</h3>
+<p>你总结出一个防御模式。</p>
+<p>有时候澄清可被用来替代提问。</p>
+<h3 id="动力性诠释">动力性诠释</h3>
+<p>你给来访者解释他们没有发觉的防御。之后你再尝试让他们觉察所防御的情感。如果你有足够信息，你也可以讨论是什么冲突引发了这些情感。</p>
+<p>另一个值得注意的细节是，你可以选择诠释某个特定性心理水平上的精神内部冲突和防御，或者你也可以跨越不同的性心理水平。</p>
+<p><strong>口欲水平</strong>。 “你对想让我帮助你这点感到很是窘迫不安。我想这种窘迫不安也许导致你想要<strong>回避</strong>咨询。可能你更想用你自己的某种方式来处理你的问题。”</p>
+<p><strong>肛欲（分离——个体化）水平</strong>。 “当你保持<strong>沉默</strong>时，你也在固执地保护你自己不必去暴露那些令人不好意思的事情；与此同时你希望我不说也能够明白你心里的想法。”</p>
+<p><strong>第一生殖器期/潜伏期水平</strong>。 “似乎你并不想做刺头<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，这会让你感到内疚。相反，你似乎又<strong>过犹不及</strong>地太过友好了，但与此同时又恨这样的状态，而当你真的发言、‘凸显’自己的时候，你的方式却又<strong>引发他人来惩罚你</strong>（以此缓解你的内疚）。”</p>
+<p>在某些情况中，诠释<strong>力比多退行</strong>或<strong>顺行</strong>也许更为恰当。亦即，你诠释<strong>不同性心理水平之间</strong>的冲突。</p>
+<h3 id="移情诠释">移情诠释</h3>
+<p>你注意到来访者用应付和他们父母关系的防御来应对你。而只有和你，这些防御是完全没有必要的。</p>
+<h3 id="起源性诠释">起源性诠释</h3>
+<p>你展示给来访者，他们过去的冲突如何被置换到当前的情境中。</p>
+<h3 id="梦的诠释">梦的诠释</h3>
+<p>你解释一个梦境中的象征如何呈现了来访者尚未意识到的特定冲突以及相关防御。要想准确地诠释梦，参考病人就梦中各种象征性元素有关的想法（“联想”）——包括出现在本治疗小节或者上一节或下一节的想法——会有所帮助。</p>
+<h3 id="阻抗诠释">阻抗诠释</h3>
+<p>在本章“发现防御”的部分还会再次提到阻抗诠释。简而言之，你可能经常会需要去尝试展示来访者看到他们的迟到、不来治疗、谈话困难、忘记付费或者含糊其辞，也许象征地表达了对于坚持治疗的某种勉强感受，而这部分他们可能并没有太觉察到。</p>
+<h3 id="链接性诠释">链接性诠释</h3>
+<p>你将来访者在一个小节中谈论的不同内容用言语链接起来，这是因为你认为它们之间彼此存在着某种联系。</p>
+<h3 id="重建">重建</h3>
+<p>这种较少使用的分析性技术指的是推测来访者早年生活中有可能发生了什么导致他们有现在的困难。这一技术在来访者无法回忆起近期或多年前发生了什么的情况下有些帮助。</p>
+<p>重建必定是至少有些不准确的。因为这个原因，如果过分关注重建来访者在儿童时期被性虐待的既往史而来访者对此又没有记忆，那么重建就是有风险的。过度狂热的重建可能让一个来访者发展出“虚假记忆综合征”（Blum，1996）以讨好治疗师（这实为<strong>点煤气灯/心理操控</strong>的一种形式，此时治疗师让来访者相信他们有某种特定的障碍）。</p>
+<p>换言之，如果治疗师试图在来访者没有现实回忆的基础上重建其童年被性虐待的历史，那么病人可能会<strong>内摄</strong>治疗师的信念，并以此来防御因不同意治疗师而产生的焦虑或内疚。来访者也可能会使用<strong>被动</strong>（顺着治疗师的暗示讲）、<strong>反向形成</strong>（表现得太过于友好，但其实感到反叛和愤怒）以及<strong>去分化</strong>（放弃自己身份同一性的某些方面以变得更像治疗师，以此来防御分离焦虑）。相同的防御也是一些人被“精神导师”和狂热崇拜组织操控的原因。只有在来访者对被性虐待有清楚回忆前提下去处理这方面的影响才是更为安全的。</p>
+<p>但另一方面，对其它情境作出的审慎重建则可能激发出与持续存在的冲突和防御操作相关的有用记忆，这进一步可以引向治疗性洞察。</p>
+<h2 id="发现防御">发现防御</h2>
+<p>从根本上讲，有两大类判断是否有防御运作的方法——<strong>演绎法</strong>和<strong>归纳法</strong>。</p>
+<h3 id="演绎性技术">演绎性技术</h3>
+<p>你可以从一些特定的客观观察中推断出防御活动。如表5.1所示，当一些人<strong>中断</strong>信息流动、突然<strong>转换</strong>话题内容、<strong>缺席治疗</strong>、<strong>抱怨</strong>可能和你有关的事情（Langs,1973）、过于<strong>象征化</strong>地讲话（如“生活就像一盒巧克力……”<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>）或者谈论事情的方式让你**“想想问题”**<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>，那么这个人就有可能在使用防御。表5.1展示出各种防御活动是如何保护一个人不去体验因愿望（各种驱力愿望）、内疚（超我部分）、现实和关系之间的精神内部冲突而引发的各种情感。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center" colspan="5">表5-1 发现防御的演绎性方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">冲突</td>
+<td style="text-align:center">→</td>
+<td style="text-align:center">即将爆发的冲突</td>
+<td style="text-align:center">→</td>
+<td style="text-align:center">活动</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">力比多驱力（口欲、肛欲、生殖器）</td>
+<td style="text-align:center" colspan="2" rowspan="9">精神内部冲突→ 情感 感受+想法（焦虑）（抑郁）（愤怒）→ 防御（将想发或感觉排除在意识之外）</td>
+<td style="text-align:center" rowspan="2">中断讲话</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">↑↓</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">攻击驱力（摧毁、报复）</td>
+<td style="text-align:center">转移话题内容</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">↑↓</td>
+<td style="text-align:center">缺席治疗</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">超我（内疚、羞耻）</td>
+<td style="text-align:center">置换抱怨</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">↑↓</td>
+<td style="text-align:center">使用象征</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">现实</td>
+<td style="text-align:center" rowspan="3">让你想想问题（YWTAQ）</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">↑↓</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">客体关系问题（黏附、距离）</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">↑↓</td>
+<td style="text-align:center" colspan="2">↑↓</td>
+<td style="text-align:center">↑↓</td>
+</tr>
+<tr>
+<td style="text-align:center" colspan="2">起源性诠释</td>
+<td style="text-align:center" colspan="2">面质（公限防御）</td>
+<td style="text-align:center">动力性诠释（防御+情感）</td>
+</tr>
+</tbody>
+</table>
+<p>格雷（Gray,1994）强调，一个人谈话进程流动性的中断显示出此人讲话时是可以去温和地面质其防御的。此外，中断的时间通常发生在一个人几乎马上就要意识到强烈的感受和渴望时。</p>
+<p>很多人在治疗初始表现出明显的阻抗。还有一些来访者则想要提前退出治疗。无论哪种情况，你可能都需要去就来访者形成阻抗的这些防御作出干预。接下来的各种场景展示出的一些典型的阻抗主题以及你想要传达给来访者的<strong>某种回应信息</strong>（当然不一定是精准的复述）。</p>
+<p><strong>具象化和理智化</strong></p>
+<p><em><strong>来访者：</strong></em> 谈论就“化学物质不平衡”使用药物的各种理论——以此不去展露痛苦、不堪的情绪或经历。例如，“我读到一篇文章说，所有的抑郁都是因为大脑化学物质不平衡导致的。还有些人说是因为缺乏维生素E”。</p>
+<p><em><strong>回应：</strong></em>“我想可能你会认为和我谈论这些理论会比去想你（在重要关系/工作中）体验到什么冲突来得更舒服些。”</p>
+<p><strong>正常化和泛化</strong></p>
+<p><em><strong>来访者：</strong></em> 断言存在的问题稀松平常，没那么不同寻常，也会说“难道大家不都这样吗？”例如，“难道不是所有当丈夫的都会这样感觉吗？”</p>
+<p><em><strong>回应：</strong></em>“我在想，可能你并不想认为自己有什么严重问题；来咨询我也许对你来讲是蛮不好意思的事。”</p>
+<p><strong>合理化和最小化，有时导致悲观主义</strong></p>
+<p><em><strong>来访者：</strong></em>“这没什么大不了的。我都习惯被虐了。我丈夫童年过得不幸，他控制不了。我也没有什么能做的。”</p>
+<p><em><strong>回应：</strong></em>“一方面，你听起来似乎是你丈夫的辩护律师，为他作许多辩解；另一方面，你似乎也像一个小孩子那样选择认为你是完全无助的。无论怎样，似乎你谈论婚姻困难的方式已经让我无论说什么对你都没有太大意义了——显然你已经认为我要试图说服你做一些你不会同意的事。”</p>
+<p><strong>投射和外化</strong></p>
+<p><em><strong>来访者：</strong></em>“你可能会认为我是个傻子……”</p>
+<p><em><strong>回应：</strong></em>“我认为这是你的良心在说话：你一定对自己多有批评，所以现在你预期我也会像你的良心那样严苛且评判。”</p>
+<p><strong>缄默和被动，有时导致顺从</strong></p>
+<p><em><strong>来访者：</strong></em>“我没有什么可谈的[停顿]。你想要我跟你说什么？”</p>
+<p><em><strong>回应：</strong></em>“我们不妨来思考一下你怎么一下就把自己放置在取悦我的位置上。”</p>
+<p><strong>社会化和幽默</strong></p>
+<p><em><strong>来访者：</strong></em>“我实在太喜欢你的办公室了。我的设计师一定会忌妒的要命！”</p>
+<p><em><strong>回应：</strong></em>“谢谢，你也有很好的品味。我想你也许会希望我能提供给你的其他东西也能展现出同等的胜任力，但可能你并不确信。”</p>
+<h3 id="归纳性技术">归纳性技术</h3>
+<p>除了使用前述这些客观的判断依据来判断是否有前意识防御外，你自身的四种可能的反应也可以提示你，来访者正在使用某些病理性的防御。但最好不要和来访者分享你的这些情感反应，而是去反思你的反应以概念化病人可能使用了什么防御。显然，使用归纳推理要求客观情况能证实你的理论，例如，可以“试探性地提出”一个防御诠释，观察来访者是否同意。</p>
+<p><strong>使用归纳推理判断防御是否存在有一个四要点准则</strong>——什么（What）、共情断裂（Empathy break）、瞎说（Bull）和应该（Shoulds）——可以使用WEBS这个记忆法记住它们。</p>
+<p><strong>“什么？！”反应</strong>。 当你想对你的来访者说诸如“什么？！你那么做到底咋想的？”时。</p>
+<p><strong>共情不同频</strong>。  指的是当来访者在你办公室里表达某种特定的情感或态度时，你却发觉你没法感受到。你表现出的冷酷无情可能提示你的某种反移情干扰<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>。但导致你共情调频阻碍的另一种可能性是病人在使用某种防御。</p>
+<p><strong>瞎说</strong>。  一个人在治疗中自由联想一些要么似乎是毫无意义的事情，要么就是之前已经详尽分析过的事情。你可以评论说：“你今天花了很多时间告诉我你上周旅游中的交通情况；我感觉你想告诉我什么，但似乎你在回避去触碰其他更令人不悦的事情。”</p>
+<p>雷尼克（Renik，1978）曾指出，过分关注那些“不具威胁性……的材料怂恿并强化了将注意力从令人不安……的想法中退缩”的防御性操作。</p>
+<p><strong>应该</strong>。  来访者告诉你他们所处的糟糕情境。他们向你解释情况的时候使用了<em><em>情感隔离，<strong>也许还会带有些许“哀怨”。你萌生了一种想要告诉他们</strong></em>该如何做</em><strong>的欲望。此时要去诠释他们的防御，尤其是其</strong>被动**。</p>
+<h2 id="诠释的顺序">诠释的顺序</h2>
+<p>防御丛以及试图回避的情绪通常应以下面的顺序一一指出：</p>
+<h3 id="威胁到生命安全的防御">威胁到生命安全的防御</h3>
+<p>可能会威胁到一个人生命安全的防御包括<strong>将愤怒转向自身、抑制判断功能</strong>或<strong>抑制自我保护功能</strong>、对于危险现实的严重<strong>否认</strong>和<strong>合理化</strong>以及<strong>受虐性地邀请</strong>严厉惩罚。</p>
+<h3 id="干扰收集重要信息的防御">干扰收集重要信息的防御</h3>
+<p>这些防御可能包括<strong>投射</strong>敌意（导致不信任治疗师）、<strong>压制、缄默、含糊其辞、贬低、置换</strong>和<strong>负移情</strong>。</p>
+<h3 id="导致阻抗治疗的防御">导致阻抗治疗的防御</h3>
+<p>下面这些防御可能导致阻抗：</p>
+<ul>
+<li>当来访者忘记上一节治疗中所有内容或者下一次治疗迟到15分钟的情况中，<strong>潜抑</strong>和<strong>回避</strong>是显著的防御。</li>
+<li><strong>压制</strong>重要的材料如自杀意念（内容与情境）以及包括幻想在内的性冲突细节。</li>
+<li><strong>移情阻抗</strong>和<strong>投射</strong>可能会导致不信任及贬低、向抛弃者的认同以及超我外化（通常表现为恐惧惩罚或害怕治疗师的不认可）。</li>
+</ul>
+<h3 id="促成来访者整体病理情况的防御">促成来访者整体病理情况的防御</h3>
+<p>这类防御包括<strong>言语抑制、向攻击者认同、被动、潜抑、反向形成、回避</strong>（情境）以及<strong>象征化</strong>和<strong>凝缩</strong>。</p>
+<h2 id="神经症中的防御">神经症中的防御</h2>
+<h2 id="边缘性人格组织中的防御">边缘性人格组织中的防御</h2>
+<p>如果前来咨询我的人展现出在Warm-ETHICS方面的问题（见第四章）以及自我力量方面的虚弱（冲动控制、情感容受、容受初级过程），那么有一个准则也许有所帮助。那就是，先诠释导致<strong>疏远</strong>的防御，而暂缓诠释和干预与愿望和内疚两者冲突相关的防御。</p>
+<h2 id="咨询和短程治疗中出现的防御">咨询和短程治疗中出现的防御</h2>
+<p>在短程治疗、长程治疗（如精神分析）甚至某些咨询<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>中，就防御进行工作是十分重要的（Blackman,1994）。很多人认为，面质和诠释潜意识防御只在长程心理治疗（一周一次频率持续超过一年）或精神分析（一周三到五次持续超过一年）中有用，这其实是一个错误的观念。有时候在短暂的咨询中，一个动力性诠释也可能颇有裨益甚至具有治疗效果。</p>
+<hr class="footnotes-sep">
+<section class="footnotes" style="color:#778899">
+<ol class="footnotes-list" >
+<li id="fn1" class="footnote-item" style="margin:0 0 -15px;font-size:0.75em;"><p>【译注】此段中，“刺头”（prick）和“凸显”（stick it out）在英文中都有性含义：prick俚语中有“阴茎”的意思；而stick it out有“暴露出来”之意。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item" style="margin:0 0 -15px;font-size:0.75em;"><p>【译注】此为电影《阿甘正传》（Forest Gump,1994）中主人公阿甘经常重复母亲的一句口头禅。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item" style="margin:0 0 -15px;font-size:0.75em;"><p>【译注】此处原文是You Want To Ask a Question（YWTAQ）. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item" style="margin:0 0 -15px;font-size:0.75em;"><p>【译注】请注意在本书中，“反移情”这个概念指因治疗师自身问题而出现的对理解病人方面的干扰。参见第四章 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item" style="margin:0 0 -15px;font-size:0.75em;"><p>【译注】此处“咨询”（consultation）指的是病人前来询问情况、进行评估等，尚未进入真正的治疗关系中。 <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%98%B2%E5%BE%A1%E5%9C%A8%E7%B2%BE%E7%A5%9E%E7%97%85%E7%90%86%E8%AF%8A%E6%96%AD%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="第四章 防御在精神病理诊断中的使用">
+                  <i class="fa fa-angle-left"></i> 第四章 防御在精神病理诊断中的使用
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E9%89%B4%E5%88%AB%E8%AF%8A%E6%96%AD%E4%B8%8E%E6%B2%BB%E7%96%97%E9%80%89%E6%8B%A9/" rel="next" title="第六章 鉴别诊断与治疗选择">
+                  第六章 鉴别诊断与治疗选择 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">hao</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script><div id="widget-tree">
+      <ul>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">
+          阅读笔记
+        </a>
+      <ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/">
+          基础知识类书籍
+        </a>
+      <ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/%E5%86%B2%E7%AA%81%E8%83%8C%E5%90%8E%E7%9A%84%E5%86%B2%E7%AA%81-%E8%A7%A3%E8%AF%BB%E6%88%91%E4%BB%AC%E5%86%85%E5%BF%83%E7%9A%84%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92/">
+          冲突背后的冲突 解读我们内心的俄狄浦斯三角
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%89%8D%E8%A8%80%E5%92%8C%E5%BA%8F/" title="前言和序"><i class="post-icon gg-file-document"></i>前言和序</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%98%AF%E4%BA%BA%E4%BA%BA%E7%BB%95%E4%B8%8D%E5%BC%80%E7%9A%84%E5%BF%83%E7%90%86%E8%AF%9D%E9%A2%98/" title="俄狄浦斯是人人绕不开的心理话题"><i class="post-icon gg-file-document"></i>俄狄浦斯是人人绕不开的心理话题</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E4%BA%BA%E7%94%9F%E5%9B%B0%E5%A2%83%E7%9A%84%E7%97%87%E7%BB%93%EF%BC%9A%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92%E5%86%B2%E7%AA%81/" title="人生困境的症结：俄狄浦斯三角冲突"><i class="post-icon gg-file-document"></i>人生困境的症结：俄狄浦斯三角冲突</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E6%83%B3%E7%9C%8B%E6%B8%85%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%BC%8F-%E5%85%88%E7%9C%8B%E6%B8%85%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92%E5%85%B3%E7%B3%BB/" title="想看清自己的心理模式 先看清俄狄浦斯三角关系"><i class="post-icon gg-file-document"></i>想看清自己的心理模式 先看清俄狄浦斯三角关系</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%88%B6%E4%BA%B2%E7%9A%84%E5%BF%83%E7%90%86%E5%8A%9F%E8%83%BD%E6%98%AF%E5%AD%A9%E5%AD%90%E6%88%90%E9%95%BF%E7%9A%84%E5%9F%BA%E7%9F%B3/" title="父亲的心理功能是孩子成长的基石"><i class="post-icon gg-file-document"></i>父亲的心理功能是孩子成长的基石</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%94%B7%E5%AD%A9%E6%88%90%E9%95%BF%E7%9A%84%E5%BF%85%E7%BB%8F%E4%B9%8B%E8%B7%AF%EF%BC%9A%E4%BB%8E%E7%AB%9E%E4%BA%89%E5%88%B0%E8%AE%A4%E5%90%8C%E7%9A%84%E7%88%B6%E5%AD%90%E5%85%B3%E7%B3%BB/" title="男孩成长的必经之路：从竞争到认同的父子关系"><i class="post-icon gg-file-document"></i>男孩成长的必经之路：从竞争到认同的父子关系</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E2%80%9D%E8%B0%A6%E8%99%9A%E8%B0%A8%E6%85%8E%E2%80%9C%E8%BF%98%E6%98%AF%E2%80%9D%E9%AA%84%E5%82%B2%E8%87%AA%E8%B1%AA%E2%80%9C%EF%BC%8C%E5%8F%96%E5%86%B3%E4%BA%8E%E9%98%89%E5%89%B2%E7%84%A6%E8%99%91/" title="”谦虚谨慎“还是”骄傲自豪“，取决于阉割焦虑"><i class="post-icon gg-file-document"></i>”谦虚谨慎“还是”骄傲自豪“，取决于阉割焦虑</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E8%B6%85%E6%88%91%EF%BC%9A%E6%88%90%E5%B0%B1%E4%B8%80%E7%94%9F%E7%9A%84%E8%87%AA%E6%88%91%E7%AE%A1%E6%9D%9F%E8%83%BD%E5%8A%9B%E6%9D%A5%E8%87%AA%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%83%85%E7%BB%93/" title="超我：成就一生的自我管束能力来自俄狄浦斯情结"><i class="post-icon gg-file-document"></i>超我：成就一生的自我管束能力来自俄狄浦斯情结</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%B8%AE%E5%AD%A9%E5%AD%90%E5%BA%A6%E8%BF%87%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%83%85%E7%BB%93%E7%9A%84%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%B8%80%EF%BC%9A%E5%AF%B9%E8%87%AA%E6%81%8B%E7%BB%99%E4%BA%88%E6%81%B0%E5%BD%93%E5%85%B1%E6%83%85/" title="帮孩子度过俄狄浦斯情结的方式之一：对自恋给予恰当共情"><i class="post-icon gg-file-document"></i>帮孩子度过俄狄浦斯情结的方式之一：对自恋给予恰当共情</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%BF%83%E7%90%86%E6%80%A7%E5%88%AB%E8%BA%AB%E4%BB%BD%E8%AE%A4%E5%90%8C%E5%88%B0%E4%BD%8D%EF%BC%8C%E6%98%AF%E6%80%A7%E5%88%AB%E6%B0%94%E8%B4%A8%E7%9A%84%E5%9F%BA%E7%A1%80/" title="心理性别身份认同到位，是性别气质的基础"><i class="post-icon gg-file-document"></i>心理性别身份认同到位，是性别气质的基础</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E6%80%A7%E5%BF%83%E7%90%86%E7%9A%84%E9%87%8D%E8%A6%81%E4%B8%BB%E9%A2%98%EF%BC%9A%E5%86%85%E9%A9%B1%E5%8A%9B/" title="性心理的重要主题：内驱力"><i class="post-icon gg-file-document"></i>性心理的重要主题：内驱力</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%A5%B3%E6%80%A7%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%83%85%E7%BB%93/" title="女性俄狄浦斯情结"><i class="post-icon gg-file-document"></i>女性俄狄浦斯情结</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E3%80%8A%E6%B0%B4%E6%B5%92%E4%BC%A0%E3%80%8B%EF%BC%9A%E4%B8%80%E5%9C%BA%E5%85%B8%E5%9E%8B%E7%9A%84%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92%E5%86%B2%E7%AA%81/" title="《水浒传》：一场典型的俄狄浦斯三角冲突"><i class="post-icon gg-file-document"></i>《水浒传》：一场典型的俄狄浦斯三角冲突</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%9C%8B%E9%80%8F%E7%A4%BE%E4%BC%9A%E6%96%87%E5%8C%96%E4%B8%AD%E7%9A%84%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%B0%E8%B1%A1%EF%BC%8C%E8%AE%A9%E7%94%9F%E6%B4%BB%E4%BB%8E%E5%AE%B9/" title="看透社会文化中的俄狄浦斯现象，让生活从容"><i class="post-icon gg-file-document"></i>看透社会文化中的俄狄浦斯现象，让生活从容</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%B2%BE%E5%BD%A9%E9%97%AE%E7%AD%94%E5%AE%9E%E5%BD%95/" title="精彩问答实录"><i class="post-icon gg-file-document"></i>精彩问答实录</a></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/%E5%BF%83%E7%81%B5%E7%9A%84%E9%9D%A2%E5%85%B7-101%E7%A7%8D%E9%98%B2%E5%BE%A1/">
+          心灵的面具 101种防御
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%BA%8F%E5%92%8C%E5%BC%95%E8%A8%80/" title="序和引言"><i class="post-icon gg-file-document"></i>序和引言</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%85%B3%E4%BA%8E%E9%98%B2%E5%BE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="第一章 关于防御的基本概念"><i class="post-icon gg-file-document"></i>第一章 关于防御的基本概念</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/101%E7%A7%8D%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6%E7%9A%84%E7%AE%80%E6%98%8E%E5%AE%9A%E4%B9%89/" title="101种防御机制的简明定义"><i class="post-icon gg-file-document"></i>101种防御机制的简明定义</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%80%A7%E5%BF%83%E7%90%86%E5%8F%A3%E6%AC%B2%E6%9C%9F%E3%80%81%E8%82%9B%E6%AC%B2%E6%9C%9F%E5%92%8C%E7%AC%AC%E4%B8%80%E7%94%9F%E6%AE%96%E5%99%A8%E6%9C%9F%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E9%98%B2%E5%BE%A1/" title="第二章 性心理口欲期、肛欲期和第一生殖器期中出现的防御"><i class="post-icon gg-file-document"></i>第二章 性心理口欲期、肛欲期和第一生殖器期中出现的防御</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%BD%9C%E4%BC%8F%E6%9C%9F%E3%80%81%E9%9D%92%E5%B0%91%E5%B9%B4%E6%9C%9F%E5%8F%8A%E6%9D%82%E7%B1%BB%E9%98%B2%E5%BE%A1/" title="第三章 潜伏期、青少年期及杂类防御"><i class="post-icon gg-file-document"></i>第三章 潜伏期、青少年期及杂类防御</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%98%B2%E5%BE%A1%E5%9C%A8%E7%B2%BE%E7%A5%9E%E7%97%85%E7%90%86%E8%AF%8A%E6%96%AD%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/" title="第四章 防御在精神病理诊断中的使用"><i class="post-icon gg-file-document"></i>第四章 防御在精神病理诊断中的使用</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AF%A0%E9%87%8A%E6%8A%80%E6%9C%AF/" title="第五章 诠释技术"><i class="post-icon gg-file-document"></i>第五章 诠释技术</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E9%89%B4%E5%88%AB%E8%AF%8A%E6%96%AD%E4%B8%8E%E6%B2%BB%E7%96%97%E9%80%89%E6%8B%A9/" title="第六章 鉴别诊断与治疗选择"><i class="post-icon gg-file-document"></i>第六章 鉴别诊断与治疗选择</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%94%AF%E6%8C%81%E6%80%A7%E6%B2%BB%E7%96%97%E6%8A%80%E6%9C%AF/" title="第七章 支持性治疗技术"><i class="post-icon gg-file-document"></i>第七章 支持性治疗技术</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E5%85%AB%E7%AB%A0-%E8%87%AA%E6%9D%80%E5%80%BE%E5%90%91%E8%AF%84%E4%BC%B0%E4%B8%AD%E9%9C%80%E8%A6%81%E5%85%B3%E6%B3%A8%E7%9A%84%E9%98%B2%E5%BE%A1/" title="第八章 自杀倾向评估中需要关注的防御"><i class="post-icon gg-file-document"></i>第八章 自杀倾向评估中需要关注的防御</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E9%99%84%E5%BD%952-%E8%AF%8A%E6%96%AD%E4%B8%AD%E9%9C%80%E8%AF%84%E4%BC%B0%E7%9A%84%E8%87%AA%E6%88%91%E5%8A%9B%E9%87%8F/" title="附录2 诊断中需评估的自我力量"><i class="post-icon gg-file-document"></i>附录2 诊断中需评估的自我力量</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E9%99%84%E5%BD%953-%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E8%AF%8A%E6%96%AD%E4%B8%AD%E5%8F%91%E5%B1%95%E6%80%A7%E5%9B%A0%E7%B4%A0%E7%9A%84%E8%80%83%E9%87%8F/" title="附录3 精神分析诊断中发展性因素的考量"><i class="post-icon gg-file-document"></i>附录3 精神分析诊断中发展性因素的考量</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E9%99%84%E5%BD%954-%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB%E7%90%86%E8%AE%BA%E7%AE%80%E5%8F%B2/" title="附录4 客体关系理论简史"><i class="post-icon gg-file-document"></i>附录4 客体关系理论简史</a></li></ul></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E7%BB%8F%E5%85%B8%E8%91%97%E4%BD%9C%E8%AF%91%E4%B8%9B/">
+          精神分析经典著作译丛
+        </a>
+      <ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E7%BB%8F%E5%85%B8%E8%91%97%E4%BD%9C%E8%AF%91%E4%B8%9B/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E4%B9%8B%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB%E7%90%86%E8%AE%BA/">
+          精神分析之客体关系理论
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/%E4%B8%80%E9%83%A8%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB%E5%8F%91%E5%B1%95%E7%9A%84%E5%9C%B0%E5%9B%BE%EF%BC%88%E4%BB%A3%E5%BA%8F%EF%BC%89/" title="一部精神分析客体关系发展的地图（代序）"><i class="post-icon gg-file-document"></i>一部精神分析客体关系发展的地图（代序）</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%BC%95%E8%A8%80/" title="引言"><i class="post-icon gg-file-document"></i>引言</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E8%B5%B7%E6%BA%90/" title="第一部分 起源"><i class="post-icon gg-file-document"></i>第一部分 起源</a></li></ul></li></ul></li></ul></li></ul>
+        <div id="widget-tree-button">
+          <i class="gg-chevron-right"></i>
+        </div>
+      </div><!-- hexo injector body_end end --></body>
+</html>
