@@ -9,27 +9,9 @@ categories:
 ---
 
 <div id="lightgallery">
-    <a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0014.JPG" data-lg-size="4608-3072">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0014.JPG" />
-    </a>
-    <a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0017.JPG" data-lg-size="4608-3072">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0017.JPG" />
-    </a>
-    <a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0018.JPG" data-lg-size="4608-3072">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0018.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0032.JPG" data-lg-size="3072-4608">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0032.JPG" />
-    </a>
 	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0098.JPG" data-lg-size="3072-4608">
         <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0098.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0103.JPG" data-lg-size="3072-4608">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0103.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0105.JPG" data-lg-size="3072-4608">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0105.JPG" />
-    </a>
+    </a>	
 	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0112.JPG" data-lg-size="3072-4608">
         <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0112.JPG" />
     </a>
@@ -41,9 +23,6 @@ categories:
     </a>
 	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0139.JPG" data-lg-size="3072-4608">
         <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0139.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0152.JPG" data-lg-size="3072-4608">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0152.JPG" />
     </a>
 	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0160.JPG" data-lg-size="3072-4608">
         <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0160.JPG" />
@@ -62,18 +41,6 @@ categories:
     </a>
 	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0271.JPG" data-lg-size="3072-4608">
         <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0271.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0279.JPG" data-lg-size="3072-4608">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0279.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0282.JPG" data-lg-size="3072-4608">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0282.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0309.JPG" data-lg-size="4608-3072">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0309.JPG" />
-    </a>
-	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0325.JPG" data-lg-size="3072-4608">
-        <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0325.JPG" />
     </a>
 	<a href="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0351.JPG" data-lg-size="3072-4608">
         <img src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/2024ChinaJoy/DSC_0351.JPG" />
