@@ -23,7 +23,6 @@
     "hexo-renderer-markdown-it": "^7.1.1",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-next": "^8.20.0",
     "hexo-widget-tree": "^0.2.3",
     "markdown-it-multimd-table": "^4.2.3"
