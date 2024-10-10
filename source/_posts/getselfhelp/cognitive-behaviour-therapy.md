@@ -7,7 +7,7 @@ tags:
 categories:
 ---
 
-## 什么是认知行为疗法（CBT），它的作用原理是什么？
+**什么是认知行为疗法（CBT），它的作用原理是什么？**
 
 认知行为疗法 (CBT) 是一种谈话疗法，主要包含以下内容：
 
@@ -44,7 +44,7 @@ categories:
 <track label="English-中文" kind="subtitles" srclang="en-zh" src="/images/getselfhelp/whatiscbt.vtt" default>
 </video>
 
-**CBT & Vicious Cycles - longer version**
+**认知行为疗法&恶性循环 - 详细版本**
 
 <video width="640" height="360" controls="controls"  poster="/images/getselfhelp/cbtbody.webp">
 <source src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/getselfhelp/ViciousCycles.mp4" type="video/mp4">
