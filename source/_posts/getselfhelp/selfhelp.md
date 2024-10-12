@@ -12,7 +12,8 @@ categories:
 
 The Decider Online Self Help Course
 
-[如何使用自助指南](https://wuhaojerry-github-io.pages.dev/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%87%AA%E4%B8%BB%E6%8C%87%E5%8D%97/)
+[如何使用自助指南](/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A9%E6%8C%87%E5%8D%97/)
+
 
 Self Help for Distress-Now 
 
