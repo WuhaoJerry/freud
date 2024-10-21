@@ -1,5 +1,5 @@
 ---
-title: 2024ChinaJoy
+title: 摄影：2024ChinaJoy
 description: ' '
 date: 2024-07-30 13:01:47
 updated:
