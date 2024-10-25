@@ -39,14 +39,14 @@ categories:
 
 **什么是认知行为疗法（CBT）**
 
-<video width="640" height="360" controls="controls"  poster="/images/getselfhelp/cbtbody.webp">
+<video width="640" height="360" controls="controls"  poster="/images/getselfhelp/whatiscbt.jpg">
 <source src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/getselfhelp/What%20is%20CBT.mp4" type="video/mp4">
 <track label="English-中文" kind="subtitles" srclang="en-zh" src="/images/getselfhelp/whatiscbt.vtt" default>
 </video>
 
 **认知行为疗法&恶性循环 - 详细版本**
 
-<video width="640" height="360" controls="controls"  poster="/images/getselfhelp/cbtbody.webp">
+<video width="640" height="360" controls="controls"  poster="/images/getselfhelp/whatiscbt2.jpg">
 <source src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/getselfhelp/ViciousCycles.mp4" type="video/mp4">
 <track label="English-中文" kind="subtitles" srclang="en-zh" src="/images/getselfhelp/ViciousCycles.vtt" default>
 </video>
