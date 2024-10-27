@@ -93,4 +93,5 @@ categories:
 
 <video width="640" height="360" controls="controls"  poster="/images/getselfhelp/theguardianposter.jpg">
 <source src="https://pub-fc357e9fb3f444e694b227ed64be66b9.r2.dev/getselfhelp/theduardian.mp4" type="video/mp4">
+<track label="English-中文" kind="subtitles" srclang="en-zh" src="/images/getselfhelp/theguardian.vtt" default>
 </video>
