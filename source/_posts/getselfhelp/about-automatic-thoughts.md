@@ -7,7 +7,7 @@ tags:
 categories:
 ---
  
-## 不要相信你所想的一切！
+**不要相信你所想的一切！**
 
 <img src="/images/getselfhelp/cognition.jpg" style="float: left; margin-right: 20px;margin-top:10px;" />
 
@@ -31,17 +31,17 @@ categories:
 
 ---
 
-想法：坏事要发生了，我无法应对，会让我们感到[焦虑]，我们会尝试避免或逃避这些情况。<img src="/images/getselfhelp/fear.jpg" style="float: right; margin-left: 20px;margin-top:10px;" />
+<img src="/images/getselfhelp/fear.jpg" style="float: right; margin-left: 20px;margin-top:0px" />想法：坏事要发生了，我无法应对，会让我们感到[焦虑]，我们会尝试避免或逃避这些情况。
 
 
 ---
 
-想法：我受到不公平对待，会让我们感到[愤怒]，我们的反应可能是攻击、大喊或者以某种方式发泄。。<img src="/images/getselfhelp/angry.jpg" style="float: right; margin-left: 20px;margin-top:10px;" />
+<img src="/images/getselfhelp/angry.jpg" style="float: right; margin-left: 20px;margin-top:0px;" />想法：我受到不公平对待，会让我们感到[愤怒]，我们的反应可能是攻击、大喊或者以某种方式发泄。
 
 
 ---
 
-消极或阴暗的想法会导致[抑郁]，所以我们会退缩并孤立自己，减少活动。<img src="/images/getselfhelp/depressed.jpg" style="float: right; margin-left: 20px;margin-top:10px;" />
+<img src="/images/getselfhelp/depressed.jpg" style="float: right; margin-left: 20px;margin-top:0px;" />消极或阴暗的想法会导致[抑郁]，所以我们会退缩并孤立自己，减少活动。
 
 
 ---

@@ -6,13 +6,13 @@ updated:
 tags:
 categories:
 ---
-## 自助
+**自助**
 
 浏览以下页面列表，然后点击相关问题或页面。
 
 The Decider Online Self Help Course
 
-[如何使用自助指南](/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A9%E6%8C%87%E5%8D%97/)
+[如何使用自助指南](/如何使用自助指南/)
 
 
 Self Help for Distress-Now 
@@ -25,11 +25,11 @@ STOPP
 
 Self help MP3 Downloads
 
-## 自助知识网页
+**自助知识网页**
 
-ABCDE:  Responding to Thoughts
+[ABCDE思维挑战法——如何用5个步骤挑战思维 ](/abcde思维挑战法——如何用5个步骤挑战思维/)
 
-About Automatic Thoughts
+[自动思维 ](/自动思维)
 
 ACE Activity
 
@@ -99,7 +99,7 @@ Defusion Techniques
 
 Depression Self Help
 
-Different Perspectives  (inc. Mental Crusher)
+[不同视角（精神粉碎机）](/不同视角（精神粉碎机）/)
 
 Distract!
 
