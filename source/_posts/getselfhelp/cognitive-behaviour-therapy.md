@@ -1,6 +1,6 @@
 ---
 title: 认知行为疗法
-description: ' '
+description:
 date: 2024-10-10 13:37:18
 updated:
 tags:

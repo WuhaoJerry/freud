@@ -1,6 +1,6 @@
 ---
 title: ABCDE思维挑战法——如何用5个步骤挑战思维
-description: 'this page is under construction '
+description:
 date: 2024-10-22 22:50:11
 updated:
 tags:

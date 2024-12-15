@@ -6,7 +6,7 @@ tags:
 - 社交媒体
 - 成瘾
 categories:
-description: "TikTok 成瘾的迹象包括在应用程序上花费过多时间、不知道自己滑动了多长时间，以及在无法使用该平台时感到烦躁或压力。TikTok 成瘾会严重干扰一个人的日常生活。"
+description:
 ---
 本文译自[TikTok Addiction](https://www.addictioncenter.com/drugs/social-media-addiction/tiktok-addiction/)
 

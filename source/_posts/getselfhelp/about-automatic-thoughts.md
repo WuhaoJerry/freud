@@ -1,6 +1,6 @@
 ---
 title: 自动思维
-description: 'this page is under construction '
+description:
 date: 2024-10-27 08:35:57
 updated:
 tags:

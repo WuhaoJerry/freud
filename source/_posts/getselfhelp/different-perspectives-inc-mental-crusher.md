@@ -1,6 +1,6 @@
 ---
 title: 不同视角（精神粉碎机）
-description: 'this page is under construction'
+description:
 date: 2024-10-24 21:10:19
 updated:
 tags:

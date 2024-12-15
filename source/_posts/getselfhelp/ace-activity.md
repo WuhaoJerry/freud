@@ -1,6 +1,6 @@
 ---
 title: ACE活动
-description: 'ACE：成就（Achieve）、联结（Connect）、享受（Enjoy） this page is under construction '
+description:
 date: 2024-11-08 08:43:44
 updated:
 tags:

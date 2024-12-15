@@ -1,6 +1,6 @@
 ---
 title: ACT：接纳承诺疗法
-description: 'this page is under construction'
+description:
 date: 2024-11-01 17:04:44
 updated:
 tags:
