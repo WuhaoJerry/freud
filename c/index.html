@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
+  <meta name="google-site-verification" content="NMn72PsJS0Io9DROjbAQX9Oqvy4fYZg-CCwCWcyAKBs">
+  <meta name="baidu-site-verification" content="codeva-y3UqGDZ4oS">
+  <meta name="bytedance-verification-code" content="WVtHbstrmH7PTBCm7vH7">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wuhaojerry-github-io.pages.dev","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.20.0","exturl":true,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta property="og:type" content="article">
+<meta property="og:title" content="C">
+<meta property="og:url" content="https://wuhaojerry-github-io.pages.dev/c/index.html">
+<meta property="og:site_name" content="Hao&#39;s notes">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-12-19T08:51:08.000Z">
+<meta property="article:modified_time" content="2024-12-19T08:51:08.000Z">
+<meta property="article:author" content="hao">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://wuhaojerry-github-io.pages.dev/c/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wuhaojerry-github-io.pages.dev/c/","path":"c/","title":"C"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>C | Hao's notes</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Hao's notes" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hao's notes</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">知识库和博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="站内搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fas fa-book-open fa-fw"></i>阅读笔记</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>博客标签</a></li><li class="menu-item menu-item-photos"><a href="/tags/%E6%91%84%E5%BD%B1%E8%AE%B0%E5%BD%95/" rel="section"><i class="fa fa-camera fa-fw"></i>摄影记录</a></li><li class="menu-item menu-item-selfhelp"><a href="/%E8%87%AA%E5%8A%A9%E6%8C%87%E5%8D%97" rel="section"><i class="fa fa-archive fa-fw"></i>自助指南</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS订阅</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>站内搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%80%9C%E5%AE%83%E2%80%9D"><span class="nav-text">“它”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A3%9F%E4%BA%BA%E7%9A%84"><span class="nav-text">食人的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%B9%E7%BC%98%E7%97%87"><span class="nav-text">边缘症</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%80%E5%8C%96%EF%BC%88%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-text">净化（方法）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A3%80%E7%A6%81"><span class="nav-text">检禁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A5%9E%E7%BB%8F%E7%97%87%E9%80%89%E6%8B%A9"><span class="nav-text">神经症选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E9%80%89%E6%8B%A9"><span class="nav-text">对象选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E6%81%8B%E5%9E%8B%E5%AF%B9%E8%B1%A1%E9%80%89%E6%8B%A9"><span class="nav-text">自恋型对象选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%9D%E9%99%84%E5%9E%8B%E5%AF%B9%E8%B1%A1%E9%80%89%E6%8B%A9"><span class="nav-text">依附型对象选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1%E5%88%86%E8%A3%82"><span class="nav-text">对象分裂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E6%88%91%E5%88%86%E8%A3%82"><span class="nav-text">自我分裂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%84%E6%AE%96%E8%85%94%EF%BC%88%E7%90%86%E8%AE%BA%EF%BC%89"><span class="nav-text">泄殖腔（理论）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BA%AB%E4%BD%93%E7%9A%84%E9%85%8D%E5%90%88"><span class="nav-text">身体的配合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%83%85%E7%BB%93"><span class="nav-text">情结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%89%E5%89%B2%E6%83%85%E7%BB%93"><span class="nav-text">阉割情结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%8A%E8%95%BE%E7%89%B9%E6%83%85%E7%BB%93"><span class="nav-text">伊蕾特情结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%8D%91%E6%83%85%E7%BB%93"><span class="nav-text">自卑情结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%8A%E5%BA%95%E5%B8%95%E6%96%AF%E6%83%85%E7%BB%93"><span class="nav-text">伊底帕斯情结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%88%B6%E4%BA%B2%E6%83%85%E7%BB%93"><span class="nav-text">父亲情结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AC%B2%E5%8A%9B%E8%A6%81%E7%B4%A0"><span class="nav-text">欲力要素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%BA%E5%88%B6%EF%BC%8C%E5%BC%BA%E5%88%B6%E7%9A%84"><span class="nav-text">强制，强制的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E5%A4%8D%E5%BC%BA%E5%88%B6"><span class="nav-text">重复强制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%9D%E7%BC%A9"><span class="nav-text">凝缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B2%BE%E7%A5%9E%E5%86%B2%E7%AA%81"><span class="nav-text">精神冲突</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8E%E8%87%AA%E6%88%91%E7%9B%B8%E5%AE%B9"><span class="nav-text">与自我相容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EF%BC%88%E5%BF%83%E7%90%86%EF%BC%89%E6%84%8F%E8%AF%86"><span class="nav-text">（心理）意识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BB%BA%E6%9E%84"><span class="nav-text">建构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%90%E5%86%85%E5%AE%B9"><span class="nav-text">隐内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E5%86%85%E5%AE%B9"><span class="nav-text">显内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%86%E6%8A%95%E8%B5%84"><span class="nav-text">逆投资</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E4%BC%A0%E4%BC%9A"><span class="nav-text">反向传会</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AC%E6%8D%A2"><span class="nav-text">转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E7%AB%8B%E5%81%B6"><span class="nav-text">对立偶</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="hao"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">hao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">89</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9waXBoaXBpLnNlcnYwMC5uZXQv" title="梦记本 → https:&#x2F;&#x2F;piphipi.serv00.net&#x2F;"><i class="fas fa-book fa-fw"></i>梦记本</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOnd1aGFvam9iYUBnbWFpbC5jb20=" title="邮箱 → mailto:wuhaojoba@gmail.com"><i class="fa fa-envelope fa-fw"></i>邮箱</span>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wuhaojerry-github-io.pages.dev/c/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hao">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hao's notes">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="C | Hao's notes">
+      <meta itemprop="description" content=" ">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          C
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-12-19 16:51:08" itemprop="dateCreated datePublished" datetime="2024-12-19T16:51:08+08:00">2024-12-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">阅读笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/" itemprop="url" rel="index"><span itemprop="name">基础知识类书籍</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/%E3%80%8A%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E8%AF%8D%E6%B1%87%E3%80%8B/" itemprop="url" rel="index"><span itemprop="name">《精神分析词汇》</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+            <div class="post-description"> </div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="“它”">“它”</h2>
+<p>弗洛伊德在第二精神装置理论中所区分的三个审级之一。“它”构成人格的欲力端，其内容——欲力之精神表现——为无意识，部分是遗传、先天的，部分则是被抑制、后天的。</p>
+<p>就经济论而言，弗洛伊德认为“它”是精神能量首要的贮槽；就动力论而言，“它”与自我、超我互相冲突，而就发生学观点而言，后两者是“它”的分化物。</p>
+<h2 id="食人的">食人的</h2>
+<p>该词比拟某些种族的食人行为，用于描述与口唇活动相关的对象关系及幻想。这个词汇以形象化的方式表达出口唇体内化的不同向度：爱、破坏、保存于自己之内、以及将对象的某些性质据为己有。有时食人阶段会被当成口唇阶段——或更特别地指亚伯拉罕（Abraham）所谓的口唇第二阶段（口唇施虐阶段）——的对等词。</p>
+<h2 id="边缘症">边缘症</h2>
+<p>边缘症最常用来指介于神经症和精神病之间的精神疾病，尤其是症状上具有神经症样态的隐性精神分裂症。</p>
+<h2 id="净化（方法）">净化（方法）</h2>
+<p>指一种精神治疗方法，其所欲达到之治疗效应为“净化”，即致病情感的适当卸载。此种治疗得以让主体唤起、甚至重新经历创伤事件，并弥除反应掉连结于其上的致病情感。</p>
+<p>就历史的观点而言，“净化方法”属于1880-1895年的阶段，在这段期间，精神分析精神治疗逐渐从催眠状态下进行的治疗中摆脱出来。</p>
+<h2 id="检禁">检禁</h2>
+<p>一种倾向于禁止无意识欲望及其衍生形成物进入前意识-意识系统内的功能。</p>
+<h2 id="神经症选择">神经症选择</h2>
+<p>指主体投入某类型精神神经症形成，而非其他类型，所经的全部过程。</p>
+<h2 id="对象选择">对象选择</h2>
+<p>指选取某人或某类型的人为爱恋对象的行为。</p>
+<p>对象选择区分为儿童期对象选择与青春期对象选择，前者为后者标出路径。</p>
+<p>弗洛伊德认为对象选择以两种主要形态作用：依附型对象选择与自恋型对象选择。</p>
+<h2 id="自恋型对象选择">自恋型对象选择</h2>
+<p>以主体对其自身之关系为模型所操作的对象选择类型，在其中对象代表主体本身的某个面向。</p>
+<h2 id="依附型对象选择">依附型对象选择</h2>
+<p>对象选择的类型之一：爱恋对象的选择是以提供儿童食物，照顾与保护的双亲形象为模型。此类对象选择的基础在于性欲力原先依附在自我保存欲力之上。</p>
+<h2 id="对象分裂">对象分裂</h2>
+<p>梅兰尼·克莱因（Melanie Klein）所描述的机制；她认为这是对抗焦虑之最原始防御机制：情欲欲力与破坏欲力所针对的对象被分裂为“好”对象与“坏”对象，这些对象之后在內摄和投射的运作中各有相对独立的命运。对象分裂特别运作于妄想-分裂型位态，在其中被分裂的是部分对象。它也出现于抑郁型位态中，但此时被分裂的则是整体对象。</p>
+<p>由于对克莱因学派而言，自我主要是经由內摄对象而构成，因此对象分裂会伴随有一相关的自我分裂，即分裂为“好”自我与“坏”自我。</p>
+<h2 id="自我分裂">自我分裂</h2>
+<p>弗洛伊德以该词指称一种他认为特别作用于恋物癖与精神病之极为特殊的现象：由于外在现实阻碍了欲力的坚持要求，在面对外在现实时，自我当中并存有两种精神态度：一种体认此现实，另一种则否认此现实并代之以欲望的产物。这两种态度毗邻并存，互不影响。</p>
+<h2 id="泄殖腔（理论）">泄殖腔（理论）</h2>
+<p>一种误识阴道与肛门之区分的儿童性理解：认为女人只有一个穴腔及开口——与肛门混淆——并透过它来生产与性交。</p>
+<h2 id="身体的配合">身体的配合</h2>
+<p>弗洛伊德引进的词汇，用以阐述歇斯底里之“神经症选择”，以及借以进行转换的器官或身体装置的选择。身体——特别是在歇斯底里患者身上——或某一个别器官，将提供给无意识冲突之象征表现一个特选的材料。</p>
+<h2 id="情结">情结</h2>
+<p>部分或完全无意识、且带有强烈情感价值的表象与记忆组织整体。情结由童年历史的人际关系所构成；它可结构化所有的心理层面：情绪、态度、习取的行为。</p>
+<h2 id="阉割情结">阉割情结</h2>
+<p>集中于阉割幻想上的情结，此幻想在于提供两性解剖学上的差异对儿童所造成之谜题一个回答（有无阴茎）：该差异被认为是女孩的阴茎被截去的缘故。</p>
+<p>阉割情结在男孩与女孩中具有相异的结构与效应。男孩畏惧阉割，视之为父亲对其性活动威胁的实现；这对他而言导致强烈的阉割焦虑。在女孩身上，没有阴茎被感受为她力图否认、补偿与修复的一种曾经遭受的歧视。</p>
+<p>阉割情结与伊底帕斯情结密切相关，尤其是后者的禁止与规范功能。</p>
+<h2 id="伊蕾特情结">伊蕾特情结</h2>
+<p>容格（Jung）指这个词汇作为女性伊底帕斯情结的同义字，以便强调在对双亲的态度上，两性之间同理地存有一种对称关系。</p>
+<h2 id="自卑情结">自卑情结</h2>
+<p>该词源于阿德勒（Adler）心理学，泛指一些态度、表象及行为的整体。它们是自卑感或对自卑感的反应之一种不同程度伪装的表达。</p>
+<h2 id="伊底帕斯情结">伊底帕斯情结</h2>
+<p>指儿童所感到对双亲的爱恋与敌意欲望的组织整体。在所谓正面形式中，该情结以一如伊底帕斯王故事中所述的方式出现：希望其对手——同性人物——死的欲望，以及对异性人物的性欲望。在负面形式中，它出现的方式相反：对双亲中同性者的爱，以及对异性者的妒恨。事实上，上述两种形式均不同程度地存在于伊底帕斯情结所谓完整的形式中。</p>
+<p>根据弗洛伊德的说法，伊底帕斯情结的高峰时期在三到五岁之间的阳具期被体验；其衰退则标示进入潜伏期。它于青春期时复苏，且多半会在某一特别类型的对象选择中会被大致成功地克服。</p>
+<p>伊底帕斯情结在人格的结构化与左右人类的欲望上扮演着根本的角色。</p>
+<p>精神分析师将其作为精神病理学上的主要参考轴，以便决定每个疾病类型的位态与其消退的模式。</p>
+<p>精神分析人类学致力于找出伊底帕斯情结之三角结构，并确认它不只在以夫妻婚姻家庭主导的文化中，并且在极其不同的文化中所具有的普遍性。</p>
+<h2 id="父亲情结">父亲情结</h2>
+<p>弗洛伊德所使用的词汇，指称伊底帕斯情结之一的主要向度：对父亲之矛盾双重关系。</p>
+<h2 id="欲力要素">欲力要素</h2>
+<p>见：部分欲力</p>
+<h2 id="强制，强制的">强制，强制的</h2>
+<p>临床上，指主体受到一股内在强迫力驱使而执行的行为类型。一旦一个思想（强迫观念）、行动、防御作业、甚至一个复杂的行为序列的未完成被感到会导致焦虑升高，那么他们绝可被形容为强制的。</p>
+<h2 id="重复强制">重复强制</h2>
+<p>A） 就具体的精神病理学层面而言，指源自无意识且无法被遏制的一种过程。透过这个过程，主体主动地自处于痛楚的情境，如此重复着过往经验，但不记得其原型；反之却有极鲜明的印象，以为这是某种在当下（actual）完全有所凭据的事物。<br>
+B）在弗洛伊德赋予它的理论建构中，重复强制被认为是一个自主的因素，且分析到最后，不可被化约一种只有快感原则、现实原则相互作用的冲突动力。基本上，重复强制被认为与欲力最普遍的特征——保存性特征——有关。</p>
+<h2 id="凝缩">凝缩</h2>
+<p>无意识过程运作的主要模式之一。指单一表象独自代表由它所连结起来的许多联想链。就经济论的观点而言，此表象会因此受到能量投资，这些原先附着在不同联想链上的能量，现在则附加在此表象上。</p>
+<p>凝缩作用于症状中，而且广泛地作用于无意识的许多不同形成（物）中。在梦中，凝缩被最明显地呈现。</p>
+<h2 id="精神冲突">精神冲突</h2>
+<p>当主体内部有许多矛盾的内在要求互相对立时，精神分析便称此为冲突。冲突可能是显性的（如欲望与道德要求的冲突，或两种相互矛盾的感觉之冲突），也可能是隐形的。后者可能透过变形的方式表达在显性冲突内，特别透过症状的形成、行为的混乱、性格上的障碍等方式转译出来。精神分析认为，冲突是人类构成的一部分，而且就许多方面而言均是如此：欲望与防御之间的冲突、不同系统或审级之间的冲突、欲力之间的冲突，以及最后，伊底帕斯冲突（其中不仅矛盾的欲望互相对立，而且这些欲望也与禁止互相冲突）。</p>
+<h2 id="与自我相容">与自我相容</h2>
+<p>该词用于形容可被自我接受的欲力、表象；亦即它们与自我的完整性与坚持要求相容。</p>
+<h2 id="（心理）意识">（心理）意识</h2>
+<p>A） 就描述意义而言，指全部精神现象中，作为外在与内在知觉特征之暂时的特质。<br>
+B） 依据弗洛伊德后设心理学理论，意识是一个系统——知觉-意识系统（Pc-Cs）——的功能。</p>
+<p>就拓扑论观点，知觉-意识系统位于精神装置的外围，同时接收来自外在世界与内部的讯息，亦即属于不快感-快感系列的感觉与记忆的复苏。弗洛伊德经常将知觉-意识系统功能附属于前意识系统，而称之为前意识-意识系统（Pcs-Cs）。</p>
+<p>就功能观点，知觉-意识系统对立于由无意识和前意识组成的记忆痕迹系统：即在知觉-意识系统上，刺激不会刻画下任何长久的痕迹。而就经济论观点，知觉-意识系统的特征为具有自由活动的能量，可多重投资于任何元素上（注意力机制）。</p>
+<p>意识在冲突动力论（有意识地避免不愉悦[物]、更为偏向性地调节快感原则）与治疗动力论（意识觉醒的功能与限度）均扮演重要角色，但意识不可被定义为防御冲突内的运作一端（a）。</p>
+<h2 id="建构">建构</h2>
+<p>弗洛伊德提出的词汇，用来指称相较于诠释，分析师对材料的一种更为广泛、更为复杂的加工。其主要目的如下：同时在真实与幻想的层面上重建主体儿童期历史的一部分。</p>
+<h2 id="隐内容">隐内容</h2>
+<p>指对无意识产物——特别是梦——进行分析所获致的全部意义。一旦被拆解后，梦不再是一个影像叙事，而是表达一个或多个欲望的某种思维组织、论述。</p>
+<h2 id="显内容">显内容</h2>
+<p>指梦者所梦见且叙述出、但尚未经分析研究的梦。透过引申，显内容亦指所有将依据分析方法来诠释的语言化产物——包括从幻想到文学作品。</p>
+<h2 id="逆投资">逆投资</h2>
+<p>弗洛伊德假设作为自我的许多防御行为之基础的一种经济过程。指自我对一些可能阻止无意识表象、欲望进入意识与活动的表象、表象系统、态度等的投资。</p>
+<p>该词亦指这种过程之短暂或持久的结果。</p>
+<h2 id="反向传会">反向传会</h2>
+<p>指分析师对被分析者本身——特别是对其传会——之所有无意识反应。</p>
+<h2 id="转换">转换</h2>
+<p>指作用于歇斯底里——特别是转换型歇斯底里（见该词）——之症状形成机制。</p>
+<p>转换是精神冲突移置于身体症状、运动机能症状（如麻痹）或感觉症状（如感觉丧失、局部疼痛），并意图借此化解这个冲突。</p>
+<p>对弗洛伊德而言，转换这个词汇与经济论概念有关：脱离被抑制表象的力比多被转换成神经支配能量。然而转换症状的特殊性在于其表征意义：即它们是透过身体来表达被抑制的表象。</p>
+<h2 id="对立偶">对立偶</h2>
+<p>弗洛伊德经常以该词指称一些重要的基本对立，无论就心理学或精神病理学的表现而言（如，施虐/受虐狂，偷窥/暴露狂），或就后设心理学而言（如生命欲力/死亡欲力）。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/b/" rel="prev" title="B">
+                  <i class="fa fa-angle-left"></i> B
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/d/" rel="next" title="D">
+                  D <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">hao</span>
+  </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-widget-tree@0.2.3/js/index.js"></script><div id="widget-tree">
+      <ul>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/">
+          阅读笔记
+        </a>
+      <ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/">
+          基础知识类书籍
+        </a>
+      <ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/%E3%80%8A%E5%86%B2%E7%AA%81%E8%83%8C%E5%90%8E%E7%9A%84%E5%86%B2%E7%AA%81-%E8%A7%A3%E8%AF%BB%E6%88%91%E4%BB%AC%E5%86%85%E5%BF%83%E7%9A%84%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92%E3%80%8B/">
+          《冲突背后的冲突 解读我们内心的俄狄浦斯三角》
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%89%8D%E8%A8%80%E5%92%8C%E5%BA%8F/" title="前言和序"><i class="post-icon gg-file-document"></i>前言和序</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%98%AF%E4%BA%BA%E4%BA%BA%E7%BB%95%E4%B8%8D%E5%BC%80%E7%9A%84%E5%BF%83%E7%90%86%E8%AF%9D%E9%A2%98/" title="俄狄浦斯是人人绕不开的心理话题"><i class="post-icon gg-file-document"></i>俄狄浦斯是人人绕不开的心理话题</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E4%BA%BA%E7%94%9F%E5%9B%B0%E5%A2%83%E7%9A%84%E7%97%87%E7%BB%93%EF%BC%9A%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92%E5%86%B2%E7%AA%81/" title="人生困境的症结：俄狄浦斯三角冲突"><i class="post-icon gg-file-document"></i>人生困境的症结：俄狄浦斯三角冲突</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E6%83%B3%E7%9C%8B%E6%B8%85%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BF%83%E7%90%86%E6%A8%A1%E5%BC%8F-%E5%85%88%E7%9C%8B%E6%B8%85%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92%E5%85%B3%E7%B3%BB/" title="想看清自己的心理模式 先看清俄狄浦斯三角关系"><i class="post-icon gg-file-document"></i>想看清自己的心理模式 先看清俄狄浦斯三角关系</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%88%B6%E4%BA%B2%E7%9A%84%E5%BF%83%E7%90%86%E5%8A%9F%E8%83%BD%E6%98%AF%E5%AD%A9%E5%AD%90%E6%88%90%E9%95%BF%E7%9A%84%E5%9F%BA%E7%9F%B3/" title="父亲的心理功能是孩子成长的基石"><i class="post-icon gg-file-document"></i>父亲的心理功能是孩子成长的基石</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%94%B7%E5%AD%A9%E6%88%90%E9%95%BF%E7%9A%84%E5%BF%85%E7%BB%8F%E4%B9%8B%E8%B7%AF%EF%BC%9A%E4%BB%8E%E7%AB%9E%E4%BA%89%E5%88%B0%E8%AE%A4%E5%90%8C%E7%9A%84%E7%88%B6%E5%AD%90%E5%85%B3%E7%B3%BB/" title="男孩成长的必经之路：从竞争到认同的父子关系"><i class="post-icon gg-file-document"></i>男孩成长的必经之路：从竞争到认同的父子关系</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E2%80%9D%E8%B0%A6%E8%99%9A%E8%B0%A8%E6%85%8E%E2%80%9C%E8%BF%98%E6%98%AF%E2%80%9D%E9%AA%84%E5%82%B2%E8%87%AA%E8%B1%AA%E2%80%9C%EF%BC%8C%E5%8F%96%E5%86%B3%E4%BA%8E%E9%98%89%E5%89%B2%E7%84%A6%E8%99%91/" title="”谦虚谨慎“还是”骄傲自豪“，取决于阉割焦虑"><i class="post-icon gg-file-document"></i>”谦虚谨慎“还是”骄傲自豪“，取决于阉割焦虑</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E8%B6%85%E6%88%91%EF%BC%9A%E6%88%90%E5%B0%B1%E4%B8%80%E7%94%9F%E7%9A%84%E8%87%AA%E6%88%91%E7%AE%A1%E6%9D%9F%E8%83%BD%E5%8A%9B%E6%9D%A5%E8%87%AA%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%83%85%E7%BB%93/" title="超我：成就一生的自我管束能力来自俄狄浦斯情结"><i class="post-icon gg-file-document"></i>超我：成就一生的自我管束能力来自俄狄浦斯情结</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%B8%AE%E5%AD%A9%E5%AD%90%E5%BA%A6%E8%BF%87%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%83%85%E7%BB%93%E7%9A%84%E6%96%B9%E5%BC%8F%E4%B9%8B%E4%B8%80%EF%BC%9A%E5%AF%B9%E8%87%AA%E6%81%8B%E7%BB%99%E4%BA%88%E6%81%B0%E5%BD%93%E5%85%B1%E6%83%85/" title="帮孩子度过俄狄浦斯情结的方式之一：对自恋给予恰当共情"><i class="post-icon gg-file-document"></i>帮孩子度过俄狄浦斯情结的方式之一：对自恋给予恰当共情</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%BF%83%E7%90%86%E6%80%A7%E5%88%AB%E8%BA%AB%E4%BB%BD%E8%AE%A4%E5%90%8C%E5%88%B0%E4%BD%8D%EF%BC%8C%E6%98%AF%E6%80%A7%E5%88%AB%E6%B0%94%E8%B4%A8%E7%9A%84%E5%9F%BA%E7%A1%80/" title="心理性别身份认同到位，是性别气质的基础"><i class="post-icon gg-file-document"></i>心理性别身份认同到位，是性别气质的基础</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E6%80%A7%E5%BF%83%E7%90%86%E7%9A%84%E9%87%8D%E8%A6%81%E4%B8%BB%E9%A2%98%EF%BC%9A%E5%86%85%E9%A9%B1%E5%8A%9B/" title="性心理的重要主题：内驱力"><i class="post-icon gg-file-document"></i>性心理的重要主题：内驱力</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%A5%B3%E6%80%A7%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E6%83%85%E7%BB%93/" title="女性俄狄浦斯情结"><i class="post-icon gg-file-document"></i>女性俄狄浦斯情结</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E3%80%8A%E6%B0%B4%E6%B5%92%E4%BC%A0%E3%80%8B%EF%BC%9A%E4%B8%80%E5%9C%BA%E5%85%B8%E5%9E%8B%E7%9A%84%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E4%B8%89%E8%A7%92%E5%86%B2%E7%AA%81/" title="《水浒传》：一场典型的俄狄浦斯三角冲突"><i class="post-icon gg-file-document"></i>《水浒传》：一场典型的俄狄浦斯三角冲突</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%9C%8B%E9%80%8F%E7%A4%BE%E4%BC%9A%E6%96%87%E5%8C%96%E4%B8%AD%E7%9A%84%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%B0%E8%B1%A1%EF%BC%8C%E8%AE%A9%E7%94%9F%E6%B4%BB%E4%BB%8E%E5%AE%B9/" title="看透社会文化中的俄狄浦斯现象，让生活从容"><i class="post-icon gg-file-document"></i>看透社会文化中的俄狄浦斯现象，让生活从容</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%B2%BE%E5%BD%A9%E9%97%AE%E7%AD%94%E5%AE%9E%E5%BD%95/" title="精彩问答实录"><i class="post-icon gg-file-document"></i>精彩问答实录</a></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/%E3%80%8A%E5%BF%83%E7%81%B5%E7%9A%84%E9%9D%A2%E5%85%B7-101%E7%A7%8D%E9%98%B2%E5%BE%A1%E3%80%8B/">
+          《心灵的面具 101种防御》
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%BA%8F%E5%92%8C%E5%BC%95%E8%A8%80/" title="序和引言"><i class="post-icon gg-file-document"></i>序和引言</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%85%B3%E4%BA%8E%E9%98%B2%E5%BE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="第一章 关于防御的基本概念"><i class="post-icon gg-file-document"></i>第一章 关于防御的基本概念</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/101%E7%A7%8D%E9%98%B2%E5%BE%A1%E6%9C%BA%E5%88%B6%E7%9A%84%E7%AE%80%E6%98%8E%E5%AE%9A%E4%B9%89/" title="101种防御机制的简明定义"><i class="post-icon gg-file-document"></i>101种防御机制的简明定义</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%80%A7%E5%BF%83%E7%90%86%E5%8F%A3%E6%AC%B2%E6%9C%9F%E3%80%81%E8%82%9B%E6%AC%B2%E6%9C%9F%E5%92%8C%E7%AC%AC%E4%B8%80%E7%94%9F%E6%AE%96%E5%99%A8%E6%9C%9F%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E9%98%B2%E5%BE%A1/" title="第二章 性心理口欲期、肛欲期和第一生殖器期中出现的防御"><i class="post-icon gg-file-document"></i>第二章 性心理口欲期、肛欲期和第一生殖器期中出现的防御</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%BD%9C%E4%BC%8F%E6%9C%9F%E3%80%81%E9%9D%92%E5%B0%91%E5%B9%B4%E6%9C%9F%E5%8F%8A%E6%9D%82%E7%B1%BB%E9%98%B2%E5%BE%A1/" title="第三章 潜伏期、青少年期及杂类防御"><i class="post-icon gg-file-document"></i>第三章 潜伏期、青少年期及杂类防御</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E9%98%B2%E5%BE%A1%E5%9C%A8%E7%B2%BE%E7%A5%9E%E7%97%85%E7%90%86%E8%AF%8A%E6%96%AD%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/" title="第四章 防御在精神病理诊断中的使用"><i class="post-icon gg-file-document"></i>第四章 防御在精神病理诊断中的使用</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%AF%A0%E9%87%8A%E6%8A%80%E6%9C%AF/" title="第五章 诠释技术"><i class="post-icon gg-file-document"></i>第五章 诠释技术</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E5%85%AD%E7%AB%A0-%E9%89%B4%E5%88%AB%E8%AF%8A%E6%96%AD%E4%B8%8E%E6%B2%BB%E7%96%97%E9%80%89%E6%8B%A9/" title="第六章 鉴别诊断与治疗选择"><i class="post-icon gg-file-document"></i>第六章 鉴别诊断与治疗选择</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%94%AF%E6%8C%81%E6%80%A7%E6%B2%BB%E7%96%97%E6%8A%80%E6%9C%AF/" title="第七章 支持性治疗技术"><i class="post-icon gg-file-document"></i>第七章 支持性治疗技术</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E5%85%AB%E7%AB%A0-%E8%87%AA%E6%9D%80%E5%80%BE%E5%90%91%E8%AF%84%E4%BC%B0%E4%B8%AD%E9%9C%80%E8%A6%81%E5%85%B3%E6%B3%A8%E7%9A%84%E9%98%B2%E5%BE%A1/" title="第八章 自杀倾向评估中需要关注的防御"><i class="post-icon gg-file-document"></i>第八章 自杀倾向评估中需要关注的防御</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E9%99%84%E5%BD%952-%E8%AF%8A%E6%96%AD%E4%B8%AD%E9%9C%80%E8%AF%84%E4%BC%B0%E7%9A%84%E8%87%AA%E6%88%91%E5%8A%9B%E9%87%8F/" title="附录2 诊断中需评估的自我力量"><i class="post-icon gg-file-document"></i>附录2 诊断中需评估的自我力量</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E9%99%84%E5%BD%953-%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E8%AF%8A%E6%96%AD%E4%B8%AD%E5%8F%91%E5%B1%95%E6%80%A7%E5%9B%A0%E7%B4%A0%E7%9A%84%E8%80%83%E9%87%8F/" title="附录3 精神分析诊断中发展性因素的考量"><i class="post-icon gg-file-document"></i>附录3 精神分析诊断中发展性因素的考量</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E9%99%84%E5%BD%954-%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB%E7%90%86%E8%AE%BA%E7%AE%80%E5%8F%B2/" title="附录4 客体关系理论简史"><i class="post-icon gg-file-document"></i>附录4 客体关系理论简史</a></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%B1%BB%E4%B9%A6%E7%B1%8D/%E3%80%8A%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E8%AF%8D%E6%B1%87%E3%80%8B/">
+          《精神分析词汇》
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/a/" title="A"><i class="post-icon gg-file-document"></i>A</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/b/" title="B"><i class="post-icon gg-file-document"></i>B</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/c/" title="C"><i class="post-icon gg-file-document"></i>C</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/d/" title="D"><i class="post-icon gg-file-document"></i>D</a></li></ul></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%BD%93%E4%BB%A3%E5%AD%A6%E6%9C%AF%E6%A3%B1%E9%95%9C%E8%AF%91%E4%B8%9B/">
+          当代学术棱镜译丛
+        </a>
+      <ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E5%BD%93%E4%BB%A3%E5%AD%A6%E6%9C%AF%E6%A3%B1%E9%95%9C%E8%AF%91%E4%B8%9B/%E3%80%8A%E6%B6%88%E8%B4%B9%E7%A4%BE%E4%BC%9A%E3%80%8B/">
+          《消费社会》
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/%E4%BB%A3%E8%AF%91%E5%BA%8F-%E6%B6%88%E8%B4%B9%E6%84%8F%E8%AF%86%E5%BD%A2%E6%80%81%EF%BC%9A%E7%AC%A6%E7%A0%81%E6%93%8D%E6%8E%A7%E4%B8%AD%E7%9A%84%E7%9C%9F%E5%AE%9E%E4%B9%8B%E6%AD%BB%E2%80%94%E2%80%94%E9%B2%8D%E5%BE%B7%E9%87%8C%E4%BA%9A%E7%9A%84%E3%80%8A%E6%B6%88%E8%B4%B9%E7%A4%BE%E4%BC%9A%E3%80%8B%E8%A7%A3%E8%AF%BB/" title="代译序 消费意识形态：符码操控中的真实之死——鲍德里亚的《消费社会》解读"><i class="post-icon gg-file-document"></i>代译序 消费意识形态：符码操控中的真实之死——鲍德里亚的《消费社会》解读</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%89%A9%E7%9A%84%E5%BD%A2%E5%BC%8F%E7%A4%BC%E6%8B%9C%E4%BB%AA%E5%BC%8F/" title="第一章 物的形式礼拜仪式"><i class="post-icon gg-file-document"></i>第一章 物的形式礼拜仪式</a></li></ul></li></ul></li>
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E7%BB%8F%E5%85%B8%E8%91%97%E4%BD%9C%E8%AF%91%E4%B8%9B/">
+          精神分析经典著作译丛
+        </a>
+      <ul class="tree-list-children">
+      <li class="tree-list-item">
+        <i class="toggle-post-icon gg-folder-add"></i>
+        <a class="tree-list-link" href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E7%BB%8F%E5%85%B8%E8%91%97%E4%BD%9C%E8%AF%91%E4%B8%9B/%E3%80%8A%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E4%B9%8B%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB%E7%90%86%E8%AE%BA%E3%80%8B/">
+          《精神分析之客体关系理论》
+        </a>
+      <ul class="tree-list-children"><li class="tree-list-item"><a class="tree-list-post-link" href="/%E4%B8%80%E9%83%A8%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AE%A2%E4%BD%93%E5%85%B3%E7%B3%BB%E5%8F%91%E5%B1%95%E7%9A%84%E5%9C%B0%E5%9B%BE%EF%BC%88%E4%BB%A3%E5%BA%8F%EF%BC%89/" title="一部精神分析客体关系发展的地图（代序）"><i class="post-icon gg-file-document"></i>一部精神分析客体关系发展的地图（代序）</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E5%BC%95%E8%A8%80/" title="引言"><i class="post-icon gg-file-document"></i>引言</a></li><li class="tree-list-item"><a class="tree-list-post-link" href="/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E8%B5%B7%E6%BA%90/" title="第一部分 起源"><i class="post-icon gg-file-document"></i>第一部分 起源</a></li></ul></li></ul></li></ul></li></ul>
+        <div id="widget-tree-button">
+          <i class="gg-chevron-right"></i>
+        </div>
+      </div><!-- hexo injector body_end end --></body>
+</html>
