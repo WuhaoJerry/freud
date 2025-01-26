@@ -1,5 +1,5 @@
 ---
-title: 精神分析词汇： P
+title: 精神分析词汇：P
 date: 2024-12-30 19:48:18
 updated:
 tags:

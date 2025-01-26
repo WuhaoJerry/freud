@@ -1,5 +1,5 @@
 ---
-title: 精神分析词汇： S
+title: 精神分析词汇：S
 date: 2025-01-04 20:52:19
 updated:
 tags:
